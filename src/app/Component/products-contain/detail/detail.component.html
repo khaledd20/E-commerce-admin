@@ -1,0 +1,22 @@
+
+<section class="section" id="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="left-images">
+          <img [src]="product?.imagePath"alt="Product Image" width="350px" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="right-content">
+          <h4>{{product?.name}}</h4>
+          <span class="price">{{product?.price | currency}}</span>
+            <div class="total">
+              <h4>Quantity {{product?.quantity}}</h4>
+              <div class="main-border-button"><a role="button" (click)="goBack()">Go Back</a></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
